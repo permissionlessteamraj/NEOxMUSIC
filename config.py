@@ -7,26 +7,26 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("27015202"))
+API_HASH = getenv("b817ca2d21c5471522ec93b819301d56")
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("7865068658:AAHwkmyAkPPv4eFQVGq0bAUGIsklJv3SJno")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://rajmusicbot:<db_password>@rajmusicbot.ix7mb.mongodb.net/?retryWrites=true&w=majority&appName=rajmusicbot", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("-1002327381319", None))
 
 # Get this value from on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 1356469075))
+OWNER_ID = int(getenv("OWNER_ID", 5789538424))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("rajmusicbot")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
@@ -39,8 +39,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ThE_RoYaL_sQuAd")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ThE_cHaTTeR_BoXx21")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/bestshayri_raj")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+W3cejbcBstU0Yjdl")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
